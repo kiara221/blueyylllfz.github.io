@@ -1,0 +1,22 @@
+body {
+       background-color: rgb(95, 183, 235));
+   }
+   h1 {
+       background-color:rgb(86, 224, 217);
+       color: rgb(221, 161, 223);
+       text-align: center;
+       border:3px solid rgb(255, 255, 255);
+   }
+  
+   h2 {
+      color: yellow;
+      background-color:rgb(90, 247, 207);
+      text-align: center;
+      border:10px solid rgb(18, 90, 12);
+   }
+
+   p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        color: rgb(202, 253, 107);
+   }
