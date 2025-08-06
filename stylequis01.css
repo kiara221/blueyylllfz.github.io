@@ -1,0 +1,48 @@
+ 
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 5px; /* Jarak antar bagian */
+            height: 100vh;
+        }
+
+        .section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .header, .footer {
+            background-color: #c62828; /* Merah gelap */
+        }
+
+        .nav-menu, .content {
+            background-color: #ff8c00; /* Oranye */
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1; /* Agar kontainer ini mengisi ruang kosong yang tersisa */
+            gap: 5px;
+        }
+
+        .sidebar {
+            background-color: #c62828; /* Merah gelap */
+            flex-basis: 200px; /* Lebar sidebar tetap */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .content {
+            flex: 1; /* Konten mengisi sisa ruang di tengah */
+        }
+
+ 
