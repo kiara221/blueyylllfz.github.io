@@ -2,7 +2,7 @@
         body {
             margin: 0;
             font-family: sans-serif;
-            background-color: black;
+            background-color: rgb(255, 255, 255);
             color: white;
             display: flex;
             flex-direction: column;
@@ -19,11 +19,11 @@
         }
 
         .header, .footer {
-            background-color: #c62828; /* Merah gelap */
+            background-color: #63d0fc; /* Merah gelap */
         }
 
         .nav-menu, .content {
-            background-color: #ff8c00; /* Oranye */
+            background-color: #ec8ccc; /* Oranye */
         }
 
         .main-container {
@@ -33,7 +33,7 @@
         }
 
         .sidebar {
-            background-color: #c62828; /* Merah gelap */
+            background-color: #63d0fc; /* Merah gelap */
             flex-basis: 200px; /* Lebar sidebar tetap */
             display: flex;
             justify-content: center;
