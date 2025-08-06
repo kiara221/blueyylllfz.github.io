@@ -5,114 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contoh Layout</title>
     <style>
-        /* Gaya dasar untuk body */
         body {
             margin: 0;
             font-family: sans-serif;
-            color: white;
-            text-align: center;
-        }
-        
-        /* Container utama yang membungkus semua elemen */
-        .container {
-            display: grid;
-            grid-template-columns: 15% 1fr 15%; /* Kolom untuk sidebar kiri, konten tengah, dan sidebar kanan */
-            grid-template-rows: auto auto 1fr auto; /* Baris untuk header, nav, konten, dan footer */
-            gap: 5px; /* Jarak antar elemen */
-            height: 100vh; /* Tinggi penuh viewport */
             background-color: black;
-        }
-
-        /* Gaya untuk setiap bagian layout */
-        .header {
-            grid-column: 1 / 4; /* Header membentang di seluruh 3 kolom */
-            background-color: #ff6c00;
-            padding: 20px;
-        }
-        
-        .nav-item-1, .nav-item-2 {
-            background-color: #ff9900;
-            padding: 20px;
-        }
-
-        .left-sidebar {
-            background-color: #d84315;
-            padding: 20px;
-            writing-mode: vertical-rl; /* Untuk membuat tulisan vertikal seperti di gambar */
-        }
-        
-        .main-content {
-            background-color: #ff9900;
-            padding: 20px;
-            grid-column: 2 / 3; /* Konten utama berada di kolom tengah */
-        }
-
-        .right-sidebar {
-            background-color: #d84315;
-            padding: 20px;
-            writing-mode: vertical-rl;
-            text-align: left;
-        }
-        
-        .footer {
-            grid-column: 1 / 4; /* Footer membentang di seluruh 3 kolom */
-            background-color: #c62828;
+            color: white;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            gap: 5px; /* Jarak antar bagian */
+            height: 100vh;
+        }
+
+        .section {
             padding: 20px;
-        }
-
-        /* Gaya untuk konten di dalam footer */
-        .footer-item {
-            background-color: #9b2828;
-            padding: 10px;
-            flex-grow: 1;
-            margin: 0 5px;
-        }
-
-        .header h1 {
-            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 1.5em;
         }
-        
-        .nav-menu {
-            display: flex;
-            justify-content: space-around;
-            padding: 5px 0;
-            grid-column: 2 / 3;
+
+        .header, .footer {
+            background-color: #c62828; /* Merah gelap */
         }
-        
+
+        .nav-menu, .content {
+            background-color: #ff8c00; /* Oranye */
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1; /* Agar kontainer ini mengisi ruang kosong yang tersisa */
+            gap: 5px;
+        }
+
+        .sidebar {
+            background-color: #c62828; /* Merah gelap */
+            flex-basis: 200px; /* Lebar sidebar tetap */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .content {
+            flex: 1; /* Konten mengisi sisa ruang di tengah */
+        }
+
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            <h1>&lt;hading here&gt;</h1>
-        </div>
+    <div class="header section">
+        Header
+    </div>
 
-        <div class="left-sidebar">
-            <p>&lt;lml&gt;</p>
-        </div>
+    <div class="nav-menu section">
+        Menu Navigasi
+    </div>
 
-        <div class="nav-menu">
-            <div class="nav-item-1">Link 1</div>
-            <div class="nav-item-2">Link 2</div>
+    <div class="main-container">
+        <div class="sidebar section">
+            Sidebar
         </div>
-        <div class="main-content">
-            </div>
+        <div class="content section">
+            Content
+        </div>
+        <div class="sidebar section">
+            Sidebar
+        </div>
+    </div>
 
-        <div class="right-sidebar">
-            <p>&lt;lml&gt;</p>
-        </div>
-
-        <div class="footer">
-            <div class="footer-item">&lt;/nl2&gt;</div>
-            <div class="footer-item">&lt;lml&gt;</div>
-            <div class="footer-item">&lt;/oohe=&gt;</div>
-        </div>
+    <div class="footer section">
+        Footer
     </div>
 
 </body>
 </html>
-Welcome to Gemini,
