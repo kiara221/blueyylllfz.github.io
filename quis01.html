@@ -1,58 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Layout</title>
+    <style>
+        /* Gaya dasar untuk body */
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+        }
+        
+        /* Container utama yang membungkus semua elemen */
+        .container {
+            display: grid;
+            grid-template-columns: 15% 1fr 15%; /* Kolom untuk sidebar kiri, konten tengah, dan sidebar kanan */
+            grid-template-rows: auto auto 1fr auto; /* Baris untuk header, nav, konten, dan footer */
+            gap: 5px; /* Jarak antar elemen */
+            height: 100vh; /* Tinggi penuh viewport */
+            background-color: black;
+        }
+
+        /* Gaya untuk setiap bagian layout */
+        .header {
+            grid-column: 1 / 4; /* Header membentang di seluruh 3 kolom */
+            background-color: #ff6c00;
+            padding: 20px;
+        }
+        
+        .nav-item-1, .nav-item-2 {
+            background-color: #ff9900;
+            padding: 20px;
+        }
+
+        .left-sidebar {
+            background-color: #d84315;
+            padding: 20px;
+            writing-mode: vertical-rl; /* Untuk membuat tulisan vertikal seperti di gambar */
+        }
+        
+        .main-content {
+            background-color: #ff9900;
+            padding: 20px;
+            grid-column: 2 / 3; /* Konten utama berada di kolom tengah */
+        }
+
+        .right-sidebar {
+            background-color: #d84315;
+            padding: 20px;
+            writing-mode: vertical-rl;
+            text-align: left;
+        }
+        
+        .footer {
+            grid-column: 1 / 4; /* Footer membentang di seluruh 3 kolom */
+            background-color: #c62828;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Gaya untuk konten di dalam footer */
+        .footer-item {
+            background-color: #9b2828;
+            padding: 10px;
+            flex-grow: 1;
+            margin: 0 5px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        
+        .nav-menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 5px 0;
+            grid-column: 2 / 3;
+        }
+        
+    </style>
+</head>
 <body>
 
-<article>
-  <header>
-    <h1>A heading here</h1>
-    <p>Posted by John Doe</p>
-    <p>Some additional information here</p>
-  </header>
-  <p>Lorem Ipsum dolor set amet....</p>
-</article>
+    <div class="container">
+        <div class="header">
+            <h1>&lt;hading here&gt;</h1>
+        </div>
+
+        <div class="left-sidebar">
+            <p>&lt;lml&gt;</p>
+        </div>
+
+        <div class="nav-menu">
+            <div class="nav-item-1">Link 1</div>
+            <div class="nav-item-2">Link 2</div>
+        </div>
+        <div class="main-content">
+            </div>
+
+        <div class="right-sidebar">
+            <p>&lt;lml&gt;</p>
+        </div>
+
+        <div class="footer">
+            <div class="footer-item">&lt;/nl2&gt;</div>
+            <div class="footer-item">&lt;lml&gt;</div>
+            <div class="footer-item">&lt;/oohe=&gt;</div>
+        </div>
+    </div>
 
 </body>
 </html>
-
-<div class="w3-bar w3-black">
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
-</div>
-
-<div class="w3-sidebar w3-bar-block" style="width:25%">
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-</div>
-
-<div style="margin-left:25%">
-... page content ...
-</div>
-
-ul {
-  list-style: none; /* Remove HTML bullets */
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  padding-left: 16px;
-}
-
-li::before {
-  content: "•"; /* Insert content that looks like bullets */
-  padding-right: 8px;
-  color: blue; /* Or a color you prefer */
-}
-<div class="w3-sidebar w3-bar-block" style="width:25%">
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-</div>
-
-<footer>
-  <p>Author: Hege Refsnes</p>
-  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-</footer>
+Welcome to Gemini,
